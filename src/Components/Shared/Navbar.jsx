@@ -34,28 +34,27 @@ const Navbar = () => {
       <div className="navbar-end">
         {!user?.email ? (
           <div className="navbar-end flex gap-4">
-            <Link to={"/login"} className="btn">
+            <Link to={"/login"} className="btn bg-red-900 hover:bg-red-600 text-white border-0">
               Login
             </Link>
-            <Link to={"/register"} className="btn">
+            <Link to={"/register"} className="btn bg-lime-300 hover:bg-lime-600 text-dark border-0">
               Registration
             </Link>
           </div>
         ) : (
-          <div className="navbar-end flex gap-4">
-            <div className="avatar placeholder flex items-center">
-              <div className="bg-neutral text-neutral-content rounded-full w-10 h-10">
-                {user ? (
-                  <img src={user.photoURL} alt="User Avatar" className="rounded-full" />
-                ) : (
-                  <img src={user.photoURL} alt="User Avatar" className="rounded-full" />)}
-              </div>
-            </div>
-            <div>
-              <button className="btn" onClick={handleLogout}>
-                Logout
-              </button>
-            </div>
+          <div className="navbar-end flex items-center gap-4">
+                <div className="dropdown dropdown-end">
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+
+                        <img src={user.photoURL} alt="User Avatar" className="rounded-full" />
+
+                    </div>
+                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                        <li><button className="btn bg-transparent border-0 shadow-transparent" onClick={handleLogout}>
+                            Logout
+                        </button></li>
+                    </ul>
+                </div>
           </div>
         )}
       </div>
