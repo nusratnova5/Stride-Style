@@ -1,0 +1,52 @@
+{
+    "shoes": [
+      {
+        "id": "1",
+        "title": "Running Shoe",
+        "brand": "Nike",
+        "price": 120.0,
+        "description": "High-performance running shoe designed for comfort and speed.",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      },
+      {
+        "id": "2",
+        "title": "Basketball Shoe",
+        "brand": "Adidas",
+        "price": 150,
+        "description": "Durable basketball shoe with excellent ankle support.",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      },
+      {
+        "id": "3",
+        "title": "Casual Sneaker",
+        "brand": "Converse",
+        "price": 65,
+        "description": "Classic casual sneaker perfect for everyday wear.",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      },
+      {
+        "id": "4",
+        "title": "Hiking Boot",
+        "brand": "Timberland",
+        "price": 200,
+        "description": "Rugged hiking boot built for tough terrain and long hikes.",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      },
+      {
+        "id": "5",
+        "title": "Soccer Cleats",
+        "brand": "Puma",
+        "price": 85,
+        "description": "Lightweight soccer cleats with excellent grip and control.",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      },
+      {
+        "id": "6",
+        "title": "Tennis Shoe",
+        "brand": "Reebok",
+        "price": 100,
+        "description": "Comfortable tennis shoe with great traction and support.",
+        "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      }
+    ]
+  }

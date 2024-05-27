@@ -1,0 +1,44 @@
+{
+  "shoes": [
+    {
+      "id": "1",
+      "title": "Running Shoe",
+      "brand": "Nike",
+      "price": 120,
+      "description": "High-performance running shoe designed for comfort and speed.",
+      "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+    },
+    {
+      "id": "2",
+      "title": "Basketball Shoe",
+      "brand": "Adidas",
+      "price": 150,
+      "description": "Durable basketball shoe with excellent ankle support.",
+      "image_url": "https://media.istockphoto.com/id/1303978937/photo/white-sneaker-on-a-blue-gradient-background-mens-fashion-sport-shoe-sneakers-lifestyle.webp?b=1&s=170667a&w=0&k=20&c=MPOqUwkp7g0MawLUQsECgl1ME12YWNnqsFwracR9HQw="
+    },
+    {
+      "id": "3",
+      "title": "Casual Sneaker",
+      "brand": "Converse",
+      "price": 65,
+      "description": "Classic casual sneaker perfect for everyday wear.",
+      "image_url": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXMlMjBzbmVrYXJ8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": "4",
+      "title": "Hiking Boot",
+      "brand": "Timberland",
+      "price": 200,
+      "description": "Rugged hiking boot built for tough terrain and long hikes.",
+      "image_url": "https://media.istockphoto.com/id/1033491270/photo/brown-suede-boots-for-men.webp?b=1&s=170667a&w=0&k=20&c=6dXAAJfQBI50CHOpyS1VH1UME2ANAL3bOAN8HMFOZ7Q="
+    },
+    {
+      "id": "5",
+      "title": "Soccer Cleats",
+      "brand": "Puma",
+      "price": 85,
+      "description": "Lightweight soccer cleats with excellent grip and control.",
+      "image_url": "https://media.istockphoto.com/id/1404635567/photo/closeup-of-a-pair-of-black-leather-football-boots-isolated-on-white-background-professional.webp?b=1&s=170667a&w=0&k=20&c=-qE6j_f9P4PdgFQpjvwCD6MUUtUOb5xJjupqAUVgrpo="
+    }
+  ]
+}
