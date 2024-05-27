@@ -33,15 +33,15 @@ const SingleProducts = ({ propShoe, setShoes, allShoes }) => {
     return (
         <div className="card w-full bg-base-100 shadow-xl ">
             <figure className="px-10 pt-10">
-                <img src={propShoe?.image_url} alt="Shoes" className="rounded-xl" />
+                <img src={propShoe?.image_url} alt="Shoes" className="rounded-xl h-48 w-full object-cover" />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{propShoe?.title}</h2>
                 <p>{propShoe?.description}</p>
                 <div className="card-actions">
-                    <button onClick={handleDelete} className="btn btn-error">Delete</button>
-                    <Link to={`/dashboard/edit-product/${propShoe.id}`} className="btn btn-primary">Edit</Link>
-                    <Link to={`/dashboard/product-details/${propShoe.id}`} className="btn btn-primary">Details</Link>
+                    <button onClick={handleDelete} className="btn btn-error bg-red-900 text-white">Delete</button>
+                    <Link to={`/dashboard/edit-product/${propShoe.id}`} className="btn bg-orange-500">Edit</Link>
+                    <Link to={`/dashboard/product-details/${propShoe.id}`} className="btn bg-lime-300">Details</Link>
                 </div>
             </div>
         </div>

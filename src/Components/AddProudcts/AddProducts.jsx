@@ -51,47 +51,47 @@ const AddProducts = () => {
 
     }
     return (
-        <div>
+        <div className=''>
             <form onSubmit={addProduct}>
                 <label className="form-control w-full">
                     <div className="label">
-                        <span className="label-text">ID</span>
+                        <span className="label-text font-bold">ID</span>
                     </div>
                     <input type="text" name='id' placeholder="ID" className="input input-bordered w-full" />
                 </label>
                 <label className="form-control w-full">
                     <div className="label">
-                        <span className="label-text">Title</span>
+                        <span className="label-text font-bold">Title</span>
                     </div>
                     <input type="text" name='title' placeholder="Title" className="input input-bordered w-full" />
                 </label>
                 <label className="form-control w-full">
                     <div className="label">
-                        <span className="label-text">Brand</span>
+                        <span className="label-text font-bold">Brand</span>
                     </div>
                     <input type="text" name='brand' placeholder="Brand" className="input input-bordered w-full" />
                 </label>
                 <label className="form-control w-full">
                     <div className="label">
-                        <span className="label-text">Price</span>
+                        <span className="label-text font-bold">Price</span>
                     </div>
                     <input type="text" name='price' placeholder="Price" className="input input-bordered w-full" />
                 </label>
                 <label className="form-control w-full">
                     <div className="label">
-                        <span className="label-text">Description</span>
+                        <span className="label-text font-bold">Description</span>
                     </div>
                     <input type="text" name='description' placeholder="Description" className="input input-bordered w-full" />
                 </label>
                 <label className="form-control w-full">
                     <div className="label">
-                        <span className="label-text">Image Url</span>
+                        <span className="label-text font-bold">Image Url</span>
                     </div>
                     <input type="text" name='image_url' placeholder="Image Url" className="input input-bordered w-full" />
                 </label>
 
                 <div>
-                    <button type='submit' className="btn btn-primary">Primary</button>
+                    <button type='submit' className="btn bg-lime-600 mt-5 text-white text-xl">Add</button>
                 </div>
             </form>
         </div>

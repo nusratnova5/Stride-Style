@@ -1,20 +1,30 @@
 import React from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
 import { auth } from '../../Firebase/Firebase.config';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 const DashboardHeader = ({ toggleSidebar }) => {
     const [user] = useAuthState(auth);
+    const [signOut] = useSignOut(auth);
+
+
+    const handleLogout = async () => {
+        await signOut();
+    };
 
     return (
-        <div className="navbar bg-blue-500">
-            <div className="flex-1">
-                <a className="btn btn-ghost text-xl">Stride Style</a>
+        <div className="navbar fixed px-2 lg:px-10 z-10">
+            <div className="flex-1 d-block lg:d-none">
+                <a className="btn btn-ghost text-xl text-red-900">Stride Style</a>
             </div>
             <div className="flex-none gap-2">
                 <div className="drawer-content flex flex-col items-center justify-center">
                     {/* Page content here */}
-                    <label onClick={toggleSidebar} className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                    <label onClick={toggleSidebar} className="btn bg-transparent border-0 shadow-transparent drawer-button lg:hidden">
+                        <FontAwesomeIcon icon={faBars} />
+                    </label>
 
                 </div>
                 <div className="dropdown dropdown-end">
@@ -24,13 +34,9 @@ const DashboardHeader = ({ toggleSidebar }) => {
 
                     </div>
                     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                            <Link className="justify-between">
-                                Profile
-                            </Link>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><button className="btn bg-transparent border-0 shadow-transparent" onClick={handleLogout}>
+                            Logout
+                        </button></li>
                     </ul>
                 </div>
             </div>
